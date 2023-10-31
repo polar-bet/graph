@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
-public class VertexTest {
+public class GraphTest {
     Graph graph = Graph.getInstance();
 
     @Test
