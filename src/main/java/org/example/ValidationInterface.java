@@ -1,9 +1,9 @@
 package org.example;
 
-public interface ValidationInterface {
-    default boolean isInteger(String value) {
+public interface ValidationInterface <T> {
+    default boolean isInteger(T value) {
         try {
-            Integer.parseInt(value);
+            Integer.parseInt(String.valueOf(value));
             return true;
         } catch (Exception e) {
             return false;

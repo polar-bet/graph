@@ -6,7 +6,7 @@ import java.util.List;
 class Vertex {
     private int index;
     private String name;
-    private ArrayList<Vertex> neighbors;
+    private ArrayList neighbors;
 
     public Vertex(int index, String name) {
         this.index = index;
