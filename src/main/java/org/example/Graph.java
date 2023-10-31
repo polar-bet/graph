@@ -19,7 +19,7 @@ class Graph {
     }
 
     public void addVertex(String vertexName) {
-        vertices.add(new Vertex(++currentNumber, vertexName));
+        vertices.add(new Vertex(currentNumber++, vertexName));
     }
 
     public void addEdge(int source, int destination) {
@@ -90,8 +90,7 @@ class Graph {
             }
 
             for (Vertex neighbor : current.getNeighbors()) {
-                int newDistance = distance.get(current) + 1; // Використовуємо фіксовану відстань 1 між сусідніми вершинами.
-
+                int newDistance = distance.get(current) + 1;
                 if (!distance.containsKey(neighbor) || newDistance < distance.get(neighbor)) {
                     distance.put(neighbor, newDistance);
                     previous.put(neighbor, current);

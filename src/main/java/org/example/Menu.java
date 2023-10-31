@@ -3,7 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Menu extends Validation {
+public class Menu {
 
     public Menu() {
         Function function = new Function();
@@ -38,6 +38,7 @@ public class Menu extends Validation {
                 return choice;
             }
             default -> {
+                System.out.println("Введено некоректне значення");
                 return choice();
             }
         }

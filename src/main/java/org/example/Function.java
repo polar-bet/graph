@@ -3,7 +3,8 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Function extends Validation {
+public class Function implements ValidationInterface {
+
     Scanner scanner = new Scanner(System.in);
     Graph graph = Graph.getInstance();
 
